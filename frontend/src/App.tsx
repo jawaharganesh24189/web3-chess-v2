@@ -109,7 +109,7 @@ function App() {
       pairs.push({
         turn: moveIndex / 2 + 1,
         white: history[moveIndex],
-        black: history[moveIndex + 1] ?? 'N/A',
+        black: history[moveIndex + 1] ?? '...',
       })
     }
     return pairs
