@@ -105,11 +105,11 @@ function App() {
 
   const movePairs = useMemo(() => {
     const pairs: Array<{ turn: number; white: string; black: string }> = []
-    for (let index = 0; index < history.length; index += 2) {
+    for (let moveIndex = 0; moveIndex < history.length; moveIndex += 2) {
       pairs.push({
-        turn: index / 2 + 1,
-        white: history[index],
-        black: history[index + 1] ?? '—',
+        turn: moveIndex / 2 + 1,
+        white: history[moveIndex],
+        black: history[moveIndex + 1] ?? '—',
       })
     }
     return pairs
